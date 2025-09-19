@@ -1,0 +1,9 @@
+{
+  "name": "task_8-rest",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes concurrently -k -n server,client -c auto \"npm --prefix node-app-alisabond start -- --p 5000 --cp 3000\" \"npm --prefix react-app-alisabond start\"",
+    "server": "npm --prefix node-app-alisabond start -- --p 5000 --cp 3000",
+    "client": "npm --prefix react-app-alisabond start"
+  }
+}
